@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Work+Sans:wght@100..900&display=swap');
+
+
+* {
+    margin:auto;
+    padding: 0;
+    border:0;
+}
+
+body {
+    font-family:'Tenor Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-style: normal;
+    width: 100%;
+    /* background-image: url('../img/fondo_postres7.png');
+    background-size:auto; */
+
+}
+
+nav, section, footer, header {
+    max-width: 1280px;
+}
+
+/* #Menu {
+    background-image: url('../img/fondo_postres5.png');
+} */
+
+
+#Cabecera {
+    background-image: url('../img/fondo_postres7.png');
+    background-size:auto;
+}
+
+
+
+    .messages {
+        list-style-type: none;
+        padding: 0;
+        max-width: 1280px;
+    }
+
+    .messages .debug {
+        background-color: #f1f1f1;
+        color: #333;
+    }
+
+    .messages .info {
+        background-color: #d9edf7;
+        color: #31708f;
+    }
+
+    .messages .success {
+        background-color: #a8fa87;
+        color: #2e5a2f;
+    }
+
+    .messages .warning {
+        background-color: #fcf8e3;
+        color: #8a6d3b;
+    }
+
+    .messages .error {
+        background-color: #f2dede;
+        color: #a94442;
+    }

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top mt-2">
+    <div class="container-fluid">
+        <a href="{% url 'ListaProducto' %}#productos" class="text-decoration-none text-dark"><h2>Lista de Productos</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2"
+            aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent2">
+            <form class="d-flex ms-auto me-0" role="search" action="{% url 'FiltroListaProductos' %}#productos" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q">
+                <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section id="productos">
+
+    <div class="border border-info-subtle rounded-3" style="max-width: 1280px;">
+
+        <div id="table-responsive" style="max-width:100%;max-height: 700px;overflow-y: auto;">
+            <table class="table table-sm align-middle" style="max-width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Foto</th>
+                        <th>Nombre del producto</th>
+                        <th>Descripción</th>
+                        <th>Light</th>
+                        <th>Precio</th>
+                        <th>Tipo</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% csrf_token %}
+                    {% for producto in producto %}
+                    <tr>
+                        <td><img src="{{ producto.imagen.url }}" alt="{{ producto.nombre }}" class="rounded img-thumbnail float-start" width="200px"></td>
+                        <td>{{ producto.nombre }}</td>
+                        <td><p>{{ producto.descripcion }}</p></td>
+                        <td>
+                            <p class="fs-1 text-center">
+                            {% if producto.liviano == True %}
+                            <i class="fa-regular fa-circle-check"></i>
+                            {% else %}
+                            <i class="fa-regular fa-circle-xmark"></i>
+                            {% endif %}    
+                            </p>                        
+                            
+                        </td>
+                        <td class="text-end">{{producto.precio}}</td>
+                        <td>{{ producto.get_privado_display }}</td>
+                        <td>
+                            <a href="{% url 'EditarProducto' producto.id_producto %}#productos"><i class="fa-solid fa-pen-to-square fs-3"></i></a>
+                            <a href="{% url 'EliminarProducto' producto.id_producto %}#productos"><i class="fa-solid fa-trash-can fs-3"></i></a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <h2 class="text-center" style="width: 100%;"><i class="fa-regular fa-face-frown-open"></i> Ups! No encuentro lo que buscas</h2>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <a href="{% url 'NuevoProducto' %}"><button type="button" class="btn btn-outline-dark btn-lg m-2">Nuevo Producto</button></a>
+    </div>
+</section>
+{% endblock %}

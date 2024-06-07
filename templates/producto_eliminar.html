@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block modals %}
+<!-- Modal -->
+    <div class="modal fade" id="nuevoProductoModal" tabindex="-1" aria-labelledby="nuevoProductoModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">¿Desea Eliminar?</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="card mb-3 mx-auto" style="max-width: 1280px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="{{producto.imagen.url}}" class="img-thumbnail rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{producto.nombre}}</h5>
+                                        <p class="card-text">{{producto.descripcion}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="{% url 'ListaProducto' %}#productos">
+                                <button type="button" class="btn btn-outline-success btn-lg m-2" data-bs-dismiss="modal">Cerrar</button>
+                            </a>
+                            <a href="{% url 'ListaProducto' %}#productos">
+                                <button type="submit" class="btn btn-outline-danger btn-lg m-2" data-bs-dismiss="modal">Eliminar</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Script para activar Modal cuando se cargue la página -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var nuevoProductoModal = new bootstrap.Modal(document.getElementById('nuevoProductoModal'));
+        nuevoProductoModal.show();
+    });
+</script>
+
+{% endblock %}
+

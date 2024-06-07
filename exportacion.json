@@ -1,0 +1,2228 @@
+[
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add productos",
+    "content_type": 7,
+    "codename": "add_productos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change productos",
+    "content_type": 7,
+    "codename": "change_productos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete productos",
+    "content_type": 7,
+    "codename": "delete_productos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view productos",
+    "content_type": 7,
+    "codename": "view_productos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add contactos",
+    "content_type": 8,
+    "codename": "add_contactos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change contactos",
+    "content_type": 8,
+    "codename": "change_contactos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete contactos",
+    "content_type": 8,
+    "codename": "delete_contactos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view contactos",
+    "content_type": 8,
+    "codename": "view_contactos"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add carrito",
+    "content_type": 9,
+    "codename": "add_carrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change carrito",
+    "content_type": 9,
+    "codename": "change_carrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete carrito",
+    "content_type": 9,
+    "codename": "delete_carrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view carrito",
+    "content_type": 9,
+    "codename": "view_carrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add items carrito",
+    "content_type": 10,
+    "codename": "add_itemscarrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change items carrito",
+    "content_type": 10,
+    "codename": "change_itemscarrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete items carrito",
+    "content_type": 10,
+    "codename": "delete_itemscarrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view items carrito",
+    "content_type": 10,
+    "codename": "view_itemscarrito"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add pedido",
+    "content_type": 11,
+    "codename": "add_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change pedido",
+    "content_type": 11,
+    "codename": "change_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete pedido",
+    "content_type": 11,
+    "codename": "delete_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view pedido",
+    "content_type": 11,
+    "codename": "view_pedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add detalle pedido",
+    "content_type": 12,
+    "codename": "add_detallepedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change detalle pedido",
+    "content_type": 12,
+    "codename": "change_detallepedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete detalle pedido",
+    "content_type": 12,
+    "codename": "delete_detallepedido"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view detalle pedido",
+    "content_type": 12,
+    "codename": "view_detallepedido"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$NJ7SzAwTOV4zY3EwC4DCDJ$E96AQ6yY8TrkkJqqQc5MLzDfpD7pVu/EoDyCxyF/ysM=",
+    "last_login": "2024-05-16T15:43:40.755Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-14T20:00:44.653Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$kNScd3ta2BQY62wv3wBLmN$IGx3TisEsQIcuPQwv5HOKZMuOTJAXLb58VcCNPTreFw=",
+    "last_login": "2024-05-27T02:05:02.187Z",
+    "is_superuser": false,
+    "username": "gerardo.alvarez@outlook.com",
+    "first_name": "Gerardo Javier",
+    "last_name": "Alvarez Alvarez",
+    "email": "gerardo.alvarez@outlook.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-05-14T20:04:38.635Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$i7lijtrYL2l0WtknimW3j0$YXoF3wX/QVqNA0LgOY+Fk9JgYkSZAcurXLw+TJ70gGo=",
+    "last_login": "2024-05-16T16:13:35.066Z",
+    "is_superuser": false,
+    "username": "matias@correo.cl",
+    "first_name": "Niño",
+    "last_name": "Matías",
+    "email": "matias@correo.cl",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-05-16T16:12:37.355Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "web",
+    "model": "productos"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "web",
+    "model": "contactos"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "web",
+    "model": "carrito"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "web",
+    "model": "itemscarrito"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "web",
+    "model": "pedido"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "web",
+    "model": "detallepedido"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pvcbiwd7eihb8glyut5tiu49xbrdkh4v",
+  "fields": {
+    "session_data": ".eJxVjMEOwiAQRP-FsyEFdqH16L3fQBYWpGpoUtqT8d9tkx70Npn3Zt7C07YWv7W0-InFVWhx-e0CxWeqB-AH1fss41zXZQryUORJmxxnTq_b6f4dFGplX8cOFec4ABtUgCE7jp2DZE2GPumsjMoU7MBGJacd9qzJ7ikCOdCI4vMF56U3pg:1sBPjS:ZW_UlAPuiZz39TOrsUNxgd09jT2W3ByOoLSpGbx2qZY",
+    "expire_date": "2024-06-10T02:05:02.193Z"
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "00bd933e-6872-40ec-b82f-d49ae8b06c7c",
+  "fields": {
+    "nombre": "Flan - 93",
+    "descripcion": "Descripción del Flan - 93",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-93",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "01246dc1-ce10-4c4c-89c7-ee0337110912",
+  "fields": {
+    "nombre": "Flan - 36",
+    "descripcion": "Descripción del Flan - 36",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-36",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "0131acc0-7f20-48ee-a92c-d6f2a285e5b9",
+  "fields": {
+    "nombre": "Flan - 42",
+    "descripcion": "Descripción del Flan - 42",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-42",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "017570a9-a23c-4608-a7ec-7ebf42f56151",
+  "fields": {
+    "nombre": "Flan - 76",
+    "descripcion": "Descripción del Flan - 76",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-76",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "02877a8e-a77e-4323-882e-e680825ce231",
+  "fields": {
+    "nombre": "Flan - 56",
+    "descripcion": "Descripción del Flan - 56",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-56",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "038ea7fd-aced-4fe5-b514-49d2ff704133",
+  "fields": {
+    "nombre": "Flan - 9",
+    "descripcion": "Descripción del Flan - 9",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-9",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "06f4a9f3-62d5-422d-b25d-cf0c2210a82c",
+  "fields": {
+    "nombre": "Flan - 52",
+    "descripcion": "Descripción del Flan - 52",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-52",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "0bf67b46-0c4a-4268-a524-f1e0c35ec596",
+  "fields": {
+    "nombre": "Flan - 12",
+    "descripcion": "Descripción del Flan - 12",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-12",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "0c389746-6bc9-4a0f-862c-42df26670c51",
+  "fields": {
+    "nombre": "Flan - 66",
+    "descripcion": "Descripción del Flan - 66",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-66",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "0d5b95a0-313f-4324-ae9c-c689d7608839",
+  "fields": {
+    "nombre": "Flan - 7",
+    "descripcion": "Descripción del Flan - 7",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-7",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "0f1ec7a4-029c-4be9-ab30-14958c9ec65e",
+  "fields": {
+    "nombre": "Flan - 100",
+    "descripcion": "Descripción del Flan - 100",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-100",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "118ecef8-6af3-428d-beb8-d70c4c0487f2",
+  "fields": {
+    "nombre": "Flan - 34",
+    "descripcion": "Descripción del Flan - 34",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-34",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "12849f53-5b36-4015-916a-c6274c766f1e",
+  "fields": {
+    "nombre": "Flan - 61",
+    "descripcion": "Descripción del Flan - 61",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-61",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "14c78e2a-87f6-4331-8a38-091765ea4f9e",
+  "fields": {
+    "nombre": "Flan - 28",
+    "descripcion": "Descripción del Flan - 28",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-28",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "181d74ef-0b9f-4198-bb9b-44a9ae401af2",
+  "fields": {
+    "nombre": "Flan - 32",
+    "descripcion": "Descripción del Flan - 32",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-32",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "1adab681-6bf4-41fd-a86e-c901c6fc9b23",
+  "fields": {
+    "nombre": "Flan - 119",
+    "descripcion": "Descripción del Flan - 119",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-119",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "1afc93c8-1f15-4617-a543-7f2f1c9afd94",
+  "fields": {
+    "nombre": "Flan - 6",
+    "descripcion": "Descripción del Flan - 6",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-6",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "1c00864a-7208-4889-87a5-d1175fe92da0",
+  "fields": {
+    "nombre": "Flan - 83",
+    "descripcion": "Descripción del Flan - 83",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-83",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "1c712452-4cf6-44d7-86c7-2c9a8534eb83",
+  "fields": {
+    "nombre": "Flan - 49",
+    "descripcion": "Descripción del Flan - 49",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-49",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "1d02bfd3-0708-42bb-a7e1-8e8e89b20462",
+  "fields": {
+    "nombre": "Flan - 11",
+    "descripcion": "Descripción del Flan - 11",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-11",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "1fce43ea-0fbe-4c77-9aef-dce0478dec9a",
+  "fields": {
+    "nombre": "Flan - 84",
+    "descripcion": "Descripción del Flan - 84",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-84",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "222e1b32-7024-46d6-9d48-6d592a9fa79d",
+  "fields": {
+    "nombre": "Flan - 74",
+    "descripcion": "Descripción del Flan - 74",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-74",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "24305a83-8efa-4517-8d25-ace3f17f57ac",
+  "fields": {
+    "nombre": "Flan - 78",
+    "descripcion": "Descripción del Flan - 78",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-78",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "251ce5ed-ebc5-419b-9231-19aaa8af6f4d",
+  "fields": {
+    "nombre": "Flan - 85",
+    "descripcion": "Descripción del Flan - 85",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-85",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "2632db1f-e4c6-4d97-8b6d-fdfa16746add",
+  "fields": {
+    "nombre": "Flan - 22",
+    "descripcion": "Descripción del Flan - 22",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-22",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "29dc172a-bf7d-4662-bfd9-284487d07219",
+  "fields": {
+    "nombre": "Flan - 81",
+    "descripcion": "Descripción del Flan - 81",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-81",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "29f95ea4-ec74-47f3-a423-82c98ead6623",
+  "fields": {
+    "nombre": "Flan - 68",
+    "descripcion": "Descripción del Flan - 68",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-68",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "2adc7bab-b18a-4323-885f-a6091bd43b4d",
+  "fields": {
+    "nombre": "Flan - 91",
+    "descripcion": "Descripción del Flan - 91",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-91",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "2c2074fb-fc7c-4e84-b133-67f92645798f",
+  "fields": {
+    "nombre": "Flan - 23",
+    "descripcion": "Descripción del Flan - 23",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-23",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "34160196-fead-48f9-814b-8de3b510f6f8",
+  "fields": {
+    "nombre": "Flan - 109",
+    "descripcion": "Descripción del Flan - 109",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-109",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "34b55108-81c8-4e50-9d46-80c5e150d385",
+  "fields": {
+    "nombre": "Flan - 67",
+    "descripcion": "Descripción del Flan - 67",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-67",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "35310a85-00a0-4016-90bf-b7ae092b1f99",
+  "fields": {
+    "nombre": "Flan - 113",
+    "descripcion": "Descripción del Flan - 113",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-113",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "3d39ead0-b69d-4ceb-afe9-dff53d8e6692",
+  "fields": {
+    "nombre": "Flan - 72",
+    "descripcion": "Descripción del Flan - 72",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-72",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "3ed9d988-c8b9-4b0a-a738-5f55357ac331",
+  "fields": {
+    "nombre": "Flan - 65",
+    "descripcion": "Descripción del Flan - 65",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-65",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "3fb11e0c-08f4-4bd9-9f38-585e7177bba9",
+  "fields": {
+    "nombre": "Flan - 29",
+    "descripcion": "Descripción del Flan - 29",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-29",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "4169020e-161b-4cc7-bcc5-b04037692a21",
+  "fields": {
+    "nombre": "Flan - 13",
+    "descripcion": "Descripción del Flan - 13",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-13",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "43d5cec9-8335-419d-a932-d464d56b5593",
+  "fields": {
+    "nombre": "Flan - 88",
+    "descripcion": "Descripción del Flan - 88",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-88",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "451e039b-77ba-4cd2-b3c5-aa9167898c92",
+  "fields": {
+    "nombre": "Flan - 51",
+    "descripcion": "Descripción del Flan - 51",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-51",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "483c3c6a-93af-480b-86bc-4e8beda3fa72",
+  "fields": {
+    "nombre": "Flan - 31",
+    "descripcion": "Descripción del Flan - 31",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-31",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "49da0966-ada3-4cb1-89b7-71c89d1e7fa8",
+  "fields": {
+    "nombre": "Flan - 5",
+    "descripcion": "Descripción del Flan - 5",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-5",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "4aefb09f-d520-4e26-9576-66d5b166cbb6",
+  "fields": {
+    "nombre": "Flan - 3",
+    "descripcion": "Descripción del Flan - 3",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-3",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "4b3addeb-c8c2-4c2f-95c9-795cec0a9d78",
+  "fields": {
+    "nombre": "Flan - 69",
+    "descripcion": "Descripción del Flan - 69",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-69",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "51daa093-a36b-4d86-bf63-2a11e03b528f",
+  "fields": {
+    "nombre": "Flan - 87",
+    "descripcion": "Descripción del Flan - 87",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-87",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "5293be68-2f62-4120-b31e-cfaf021688f0",
+  "fields": {
+    "nombre": "Flan - 57",
+    "descripcion": "Descripción del Flan - 57",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-57",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "5a11d373-0be6-4c6f-bb31-75a049c946d5",
+  "fields": {
+    "nombre": "Flan - 82",
+    "descripcion": "Descripción del Flan - 82",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-82",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "5ef43cbd-87c5-46db-b872-509f0444d7c8",
+  "fields": {
+    "nombre": "Flan - 16",
+    "descripcion": "Descripción del Flan - 16",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-16",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "5ffb6f3a-7ec8-4e7a-b010-293fe1a6e14d",
+  "fields": {
+    "nombre": "Flan - 116",
+    "descripcion": "Descripción del Flan - 116",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-116",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "63b2e245-be85-421b-9487-d839a9762a0d",
+  "fields": {
+    "nombre": "Flan - 112",
+    "descripcion": "Descripción del Flan - 112",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-112",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "6506e388-9b8a-423f-9033-3be8765391f0",
+  "fields": {
+    "nombre": "Flan - 108",
+    "descripcion": "Descripción del Flan - 108",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-108",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "66f9cfe4-f33c-430f-8267-1d38d989acf1",
+  "fields": {
+    "nombre": "Flan - 45",
+    "descripcion": "Descripción del Flan - 45",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-45",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "6867d103-4011-4325-8102-41240ff95975",
+  "fields": {
+    "nombre": "Flan - 60",
+    "descripcion": "Descripción del Flan - 60",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-60",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "69e5d851-c545-4700-a655-060754a409b2",
+  "fields": {
+    "nombre": "Flan - 30",
+    "descripcion": "Descripción del Flan - 30",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-30",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "719c2ee8-5401-4c2e-82c4-5383c4bb36c2",
+  "fields": {
+    "nombre": "Flan - 26",
+    "descripcion": "Descripción del Flan - 26",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-26",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "7729f47a-51ed-4657-86a6-1cb0b533b964",
+  "fields": {
+    "nombre": "Flan - 106",
+    "descripcion": "Descripción del Flan - 106",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-106",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "788ade66-d1f2-46ad-9fdf-c103bc27088c",
+  "fields": {
+    "nombre": "Flan - 80",
+    "descripcion": "Descripción del Flan - 80",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-80",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "7a21ed9b-b3b2-443a-b836-d49a242e812e",
+  "fields": {
+    "nombre": "Flan - 77",
+    "descripcion": "Descripción del Flan - 77",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-77",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "7ba0d97e-b099-48f9-8764-f60a20000f82",
+  "fields": {
+    "nombre": "Flan - 102",
+    "descripcion": "Descripción del Flan - 102",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-102",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "7e04367a-c766-4f9d-903a-06ab9412fe59",
+  "fields": {
+    "nombre": "Flan - 92",
+    "descripcion": "Descripción del Flan - 92",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-92",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "80a9cb8e-ba79-4bbe-b9f3-5383d58c9c2f",
+  "fields": {
+    "nombre": "Flan - 21",
+    "descripcion": "Descripción del Flan - 21",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-21",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "85ffadad-966a-4125-9c1f-324ba7990edb",
+  "fields": {
+    "nombre": "Flan - 89",
+    "descripcion": "Descripción del Flan - 89",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-89",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "8680a1a0-3a56-4dff-83ed-9a9c3c525c03",
+  "fields": {
+    "nombre": "Flan - 98",
+    "descripcion": "Descripción del Flan - 98",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-98",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "8a6d2907-78a4-4e3b-ac18-06712c0c5f40",
+  "fields": {
+    "nombre": "Flan - 114",
+    "descripcion": "Descripción del Flan - 114",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-114",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "8c5dbdd7-38a6-456a-a1d2-7b1ed2bce6a7",
+  "fields": {
+    "nombre": "Flan - 38",
+    "descripcion": "Descripción del Flan - 38",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-38",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "8ffea4d6-af85-4b6d-96e8-be9b5cf960ea",
+  "fields": {
+    "nombre": "Flan - 118",
+    "descripcion": "Descripción del Flan - 118",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-118",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "90ce9d5c-2c6c-490d-bd60-33be760d03c7",
+  "fields": {
+    "nombre": "Flan - 105",
+    "descripcion": "Descripción del Flan - 105",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-105",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "9257ecff-eaf6-4dae-90e7-c75a956adb99",
+  "fields": {
+    "nombre": "Flan - 8",
+    "descripcion": "Descripción del Flan - 8",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-8",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "97903884-f336-495a-98fc-e5281d316c4f",
+  "fields": {
+    "nombre": "Flan - 20",
+    "descripcion": "Descripción del Flan - 20",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-20",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "98b1825d-2b31-4387-a726-c44127cc2e4e",
+  "fields": {
+    "nombre": "Flan - 54",
+    "descripcion": "Descripción del Flan - 54",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-54",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "9b128ffb-785b-48ff-8ecc-df045dacab32",
+  "fields": {
+    "nombre": "Flan - 41",
+    "descripcion": "Descripción del Flan - 41",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-41",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "9c1a57d4-d7b3-4b52-a637-a0c7738c8310",
+  "fields": {
+    "nombre": "Flan - 37",
+    "descripcion": "Descripción del Flan - 37",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-37",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "9ca1ecee-692f-4b20-843b-37765ca945cb",
+  "fields": {
+    "nombre": "Flan - 17",
+    "descripcion": "Descripción del Flan - 17",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-17",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "9d35b71b-956f-43c2-a684-bca7c53270da",
+  "fields": {
+    "nombre": "Flan - 55",
+    "descripcion": "Descripción del Flan - 55",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-55",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "a034686e-125b-4499-befb-41fc976f0a08",
+  "fields": {
+    "nombre": "Flan - 18",
+    "descripcion": "Descripción del Flan - 18",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-18",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "a1e88a0a-0dcd-4023-9a75-231777efaaf6",
+  "fields": {
+    "nombre": "Flan - 14",
+    "descripcion": "Descripción del Flan - 14",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-14",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "a24fba27-eb80-4425-9ec9-72803213affb",
+  "fields": {
+    "nombre": "Flan de Frambuesa",
+    "descripcion": "Delicioso Flan de Frambueza",
+    "imagen": "productos/flan_frambueza_oVuxjen.jpg",
+    "slug": "flan-1",
+    "precio": "1500",
+    "liviano": false,
+    "privado": true
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "a2f56c97-1ff0-4834-8ca0-1ab52932483f",
+  "fields": {
+    "nombre": "Flan - 71",
+    "descripcion": "Descripción del Flan - 71",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-71",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "a471fd63-28ce-4d81-970a-91c5754f2137",
+  "fields": {
+    "nombre": "Flan - 110",
+    "descripcion": "Descripción del Flan - 110",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-110",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "ab11380d-49ca-4875-b21a-82473d8a18a6",
+  "fields": {
+    "nombre": "Flan de Queso",
+    "descripcion": "Delicioso Flan de Queso",
+    "imagen": "productos/Cabecera3.png",
+    "slug": "flan-2",
+    "precio": "2000",
+    "liviano": true,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "b08783d7-acf3-443f-bca3-d5f7da46b3c0",
+  "fields": {
+    "nombre": "Flan - 111",
+    "descripcion": "Descripción del Flan - 111",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-111",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "b243ea42-7a05-45e5-a56b-234bbfa91201",
+  "fields": {
+    "nombre": "Flan - 115",
+    "descripcion": "Descripción del Flan - 115",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-115",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "b7fdf888-a1cb-4632-be08-c1fbceadadd6",
+  "fields": {
+    "nombre": "Flan - 94",
+    "descripcion": "Descripción del Flan - 94",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-94",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "b8c9c878-6d29-4b9a-b407-eac4cc882a24",
+  "fields": {
+    "nombre": "Flan - 44",
+    "descripcion": "Descripción del Flan - 44",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-44",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "b907a7e6-7ea8-4d63-b4d9-a3376ad7dc6f",
+  "fields": {
+    "nombre": "Flan - 62",
+    "descripcion": "Descripción del Flan - 62",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-62",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "b94c02f0-3559-4ecb-bd8f-b05a65f18c49",
+  "fields": {
+    "nombre": "Flan - 27",
+    "descripcion": "Descripción del Flan - 27",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-27",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "b9faaef2-a5fe-4fdb-9c3e-bc3ecaa7a070",
+  "fields": {
+    "nombre": "Flan - 59",
+    "descripcion": "Descripción del Flan - 59",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-59",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "baadea49-a72e-4a5d-83d6-6a4a15c30877",
+  "fields": {
+    "nombre": "Flan - 70",
+    "descripcion": "Descripción del Flan - 70",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-70",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "baedb750-7ba7-4c7c-806d-71796c282789",
+  "fields": {
+    "nombre": "Flan - 4",
+    "descripcion": "Descripción del Flan - 4",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-4",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "bffbb1c3-e874-443d-9432-5321ac3760f1",
+  "fields": {
+    "nombre": "Flan - 33",
+    "descripcion": "Descripción del Flan - 33",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-33",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c076477f-854d-4b14-8dcc-be99becd2e3f",
+  "fields": {
+    "nombre": "Flan - 39",
+    "descripcion": "Descripción del Flan - 39",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-39",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c085b9e4-55de-4b6c-8029-bd7ea915a7ab",
+  "fields": {
+    "nombre": "Flan - 79",
+    "descripcion": "Descripción del Flan - 79",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-79",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c179f034-8820-4a70-ac66-45e27a1e4058",
+  "fields": {
+    "nombre": "Flan - 50",
+    "descripcion": "Descripción del Flan - 50",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-50",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c2fa3577-a216-421c-938f-7a34818b57cd",
+  "fields": {
+    "nombre": "Flan - 73",
+    "descripcion": "Descripción del Flan - 73",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-73",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c3457242-d3d1-4266-ade1-b60c4f533c8a",
+  "fields": {
+    "nombre": "Flan - 48",
+    "descripcion": "Descripción del Flan - 48",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-48",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c467b5b1-5095-4a73-8937-fe457e966771",
+  "fields": {
+    "nombre": "Flan - 19",
+    "descripcion": "Descripción del Flan - 19",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-19",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c5d73c83-6aca-424e-8b11-b4f3068ce36f",
+  "fields": {
+    "nombre": "Flan - 75",
+    "descripcion": "Descripción del Flan - 75",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-75",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "c746486a-1066-47d0-86c8-3130b266bbf2",
+  "fields": {
+    "nombre": "Flan - 101",
+    "descripcion": "Descripción del Flan - 101",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-101",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "ca8c7acb-74bb-4645-b6e2-cadd579aae2e",
+  "fields": {
+    "nombre": "Flan - 104",
+    "descripcion": "Descripción del Flan - 104",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-104",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "cac237b9-9645-481c-b7a5-a9d4d8b59cef",
+  "fields": {
+    "nombre": "Flan - 47",
+    "descripcion": "Descripción del Flan - 47",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-47",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "cdbe6b9d-353f-4bb3-ba43-5e6daafda1d8",
+  "fields": {
+    "nombre": "Flan - 95",
+    "descripcion": "Descripción del Flan - 95",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-95",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "d036f0e7-a6d4-49f3-8b52-2e0b5a1b54a0",
+  "fields": {
+    "nombre": "Flan - 120",
+    "descripcion": "Descripción del Flan - 120",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-120",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "d2f91675-6ce9-4204-bf2f-5523da746e54",
+  "fields": {
+    "nombre": "Flan - 90",
+    "descripcion": "Descripción del Flan - 90",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-90",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "d82c2a1e-049e-4b61-944b-10734d4e2424",
+  "fields": {
+    "nombre": "Flan - 99",
+    "descripcion": "Descripción del Flan - 99",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-99",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "de626e8f-9955-4cb1-a13f-4af1a3ce2e74",
+  "fields": {
+    "nombre": "Flan - 43",
+    "descripcion": "Descripción del Flan - 43",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-43",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "e02d76be-152e-438c-9293-dd9da1bddcec",
+  "fields": {
+    "nombre": "Flan - 117",
+    "descripcion": "Descripción del Flan - 117",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-117",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "e08ab4e6-35dc-48eb-b029-68fe9630230c",
+  "fields": {
+    "nombre": "Flan - 40",
+    "descripcion": "Descripción del Flan - 40",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-40",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "e37695f1-c23b-4e34-ae1f-6d9211b949ee",
+  "fields": {
+    "nombre": "Flan - 15",
+    "descripcion": "Descripción del Flan - 15",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-15",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "e9135f5a-36c6-4e0e-b839-9cb37551fea0",
+  "fields": {
+    "nombre": "Flan - 97",
+    "descripcion": "Descripción del Flan - 97",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-97",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "eb26b4fd-d843-4835-9175-afa5cd64e1d0",
+  "fields": {
+    "nombre": "Flan - 107",
+    "descripcion": "Descripción del Flan - 107",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-107",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "eb47a117-882d-4c8f-988c-4d1fa68abc60",
+  "fields": {
+    "nombre": "Flan - 53",
+    "descripcion": "Descripción del Flan - 53",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-53",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "eba46c72-1e5a-45f3-b32e-0400baca60cb",
+  "fields": {
+    "nombre": "Flan - 103",
+    "descripcion": "Descripción del Flan - 103",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-103",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "ed7b5f4f-c524-4ab4-ad28-13d4b450961f",
+  "fields": {
+    "nombre": "Flan - 58",
+    "descripcion": "Descripción del Flan - 58",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-58",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "eecbd3c9-b621-4132-8932-fb7c4d0c04a0",
+  "fields": {
+    "nombre": "Flan - 86",
+    "descripcion": "Descripción del Flan - 86",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-86",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "efe35f18-6ce5-49d6-bd4f-6d95c3fa66b1",
+  "fields": {
+    "nombre": "Flan - 24",
+    "descripcion": "Descripción del Flan - 24",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-24",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "f15c6a97-8258-4307-83c1-98d9012d6fa2",
+  "fields": {
+    "nombre": "Flan de algo",
+    "descripcion": "Este es una prueba de un flan de algo",
+    "imagen": "productos/Cabecera_Flan_Caramelo.png",
+    "slug": "flan-de-algo",
+    "precio": "1500",
+    "liviano": false,
+    "privado": true
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "f30ed380-c295-49cf-ae6c-d6e3db13bf2d",
+  "fields": {
+    "nombre": "Flan - 35",
+    "descripcion": "Descripción del Flan - 35",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-35",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "f3e80227-e091-4a75-91c5-28e99776e597",
+  "fields": {
+    "nombre": "Flan - 64",
+    "descripcion": "Descripción del Flan - 64",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-64",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "f502bb97-3f3f-461c-b4d2-20c22152d96a",
+  "fields": {
+    "nombre": "Flan - 25",
+    "descripcion": "Descripción del Flan - 25",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-25",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "f58aa294-cb4b-452b-af5e-466ffa7538cd",
+  "fields": {
+    "nombre": "Flan - 96",
+    "descripcion": "Descripción del Flan - 96",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-96",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "ff5924a4-61ce-48e3-9034-cf6f209fe5a1",
+  "fields": {
+    "nombre": "Flan - 63",
+    "descripcion": "Descripción del Flan - 63",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-63",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "ffb02efa-2c49-44c4-937f-4b5c244877b8",
+  "fields": {
+    "nombre": "Flan - 10",
+    "descripcion": "Descripción del Flan - 10",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-10",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.productos",
+  "pk": "ffd77478-8769-4e54-bbc3-7fef64b6fb11",
+  "fields": {
+    "nombre": "Flan - 46",
+    "descripcion": "Descripción del Flan - 46",
+    "imagen": "productos/cargar_imagen.png",
+    "slug": "flan-46",
+    "precio": "0",
+    "liviano": false,
+    "privado": false
+  }
+},
+{
+  "model": "web.carrito",
+  "pk": 2,
+  "fields": {
+    "usuario": 2,
+    "fecha_creacion": "2024-05-16T16:08:27.704Z"
+  }
+},
+{
+  "model": "web.carrito",
+  "pk": 3,
+  "fields": {
+    "usuario": 3,
+    "fecha_creacion": "2024-05-16T16:13:42.680Z"
+  }
+},
+{
+  "model": "web.itemscarrito",
+  "pk": 3,
+  "fields": {
+    "carrito": 2,
+    "producto": "a24fba27-eb80-4425-9ec9-72803213affb",
+    "cantidad": 2
+  }
+},
+{
+  "model": "web.itemscarrito",
+  "pk": 4,
+  "fields": {
+    "carrito": 3,
+    "producto": "a24fba27-eb80-4425-9ec9-72803213affb",
+    "cantidad": 1
+  }
+},
+{
+  "model": "web.pedido",
+  "pk": 1,
+  "fields": {
+    "usuario": 1,
+    "fecha_pedido": "2024-05-16T15:45:33.323Z",
+    "total": "3500.00"
+  }
+},
+{
+  "model": "web.detallepedido",
+  "pk": 1,
+  "fields": {
+    "pedido": 1,
+    "producto": "ab11380d-49ca-4875-b21a-82473d8a18a6",
+    "cantidad": 1,
+    "precio": "2000.00"
+  }
+},
+{
+  "model": "web.detallepedido",
+  "pk": 2,
+  "fields": {
+    "pedido": 1,
+    "producto": "a24fba27-eb80-4425-9ec9-72803213affb",
+    "cantidad": 1,
+    "precio": "1500.00"
+  }
+}
+]

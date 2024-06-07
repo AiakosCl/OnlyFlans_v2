@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+
+<!-- Modal -->
+<section id="historial">
+    <div class="modal fade" id="nuevoProductoModal" tabindex="-1" aria-labelledby="nuevoProductoModalLabel"
+        aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content" style="width: 100%;">
+                <div class="modal-header">
+                    <h1 class="modal-title">Mis Pedidos</h1>
+                    <a href="{% url 'Inicio' %}"><button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button></a>
+                </div>
+                <!-- barra de mensajes -->
+                {% include "includes/mensajes.html" %}
+                <!-- barra de mensajes -->
+                <div class="modal-body" style="max-height: 400px; overflow-y: auto;">
+                    {% if pedidos %}
+                    {% for pedido in pedidos %}
+                    <div class="card mb-3" style="width: 25rem;">
+                        <img src="{% static 'img/onlyflans.png' %}" class="img-fluid" height="50px" width="200px">
+                        <div class="card-body" style="width: 100%;">
+                            <h5 class="card-title">Pedido #{{ pedido.id }}</h5>
+                            <p class="card-text">Fecha: {{ pedido.fecha_pedido }}</p>
+                        </div>
+                        <div class="accordion" id="accordion" style="width: 100%;">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        Detalle del pedido
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordion">
+                                    <div class="accordion-body">
+                                        <table class="table table-sm align-middle" style="width: 100%;">
+                                            <thead>
+                                                <th>Producto</th>
+                                                <th>Cantidad</th>
+                                                <th>Precio</th>
+                                            </thead>
+                                            <tbody>
+                                                {% for detalle in pedido.detallepedido_set.all %}
+                                                <tr>
+                                                    <td>{{ detalle.producto.nombre }}</td>
+                                                    <td class="text-end">{{ detalle.cantidad }}</td>
+                                                    <td class="text-end">{{ detalle.precio }}</td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text text-end fs-5 fw-bold" style="width: 100%;">Total: {{ pedido.total }}</p>
+                        <div class="card-body">
+                            <a href="#" class="card-link"><i class="fa-solid fa-arrow-rotate-right fs-3"></i></a>
+                        </div>
+                    </div> 
+                    {% endfor %}                   
+                    {% else %}
+                    <p>No tienes pedidos registrados.</p>
+                    {% endif %}
+                    <div class="modal-footer">
+                        <a href="{% url 'Inicio' %}"><button type="button" class="btn btn-outline-success btn-lg m-2"
+                                data-bs-dismiss="modal">Cerrar</button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+</section>
+
+
+<!-- Script para activar Modal cuando se cargue la página -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var nuevoProductoModal = new bootstrap.Modal(document.getElementById('nuevoProductoModal'));
+        nuevoProductoModal.show();
+    });
+</script>
+{% endblock %}

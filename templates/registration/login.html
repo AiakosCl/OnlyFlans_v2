@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+
+<!-- Modal -->
+<div class="modal fade" id="nuevoProductoModal" tabindex="-1" aria-labelledby="nuevoProductoModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
+    <div class="modal-dialog modal-md" >
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title">Iniciar Sesión</h1>
+                <a href="{% url 'Inicio' %}"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+            </div>
+            <!-- barra de mensajes -->
+            {% include "includes/mensajes.html" %}
+            <!-- barra de mensajes -->
+            <div class="modal-body">
+                <!-- Formulario de login -->
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="username">Nombre de usuario:</label>
+                        <input type="text" class="form-control" id="username" name="username" required>
+                        <div text-danger>{{ form.username.errors }}</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Contraseña:</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                        <div class="text-danger">{{ form.password.errors }}</div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <a href="{% url 'NuevoUsuario' %}">Regístrate</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <a href="{% url 'Inicio' %}"><button type="button" class="btn btn-outline-danger btn-lg m-2" data-bs-dismiss="modal">Cerrar</button></a>
+                        <button type="submit" class="btn btn-outline-success btn-lg m-2">Iniciar Sesión</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Script para activar Modal cuando se cargue la página -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var nuevoProductoModal = new bootstrap.Modal(document.getElementById('nuevoProductoModal'));
+    nuevoProductoModal.show();
+});
+</script>
+{% endblock %}

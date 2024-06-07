@@ -1,0 +1,86 @@
+<!-- Modal -->
+<!-- video historia -->
+<div class="modal fade" id="VideoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    style="background-color: rgba(0, 0, 0, 0.7);">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Historia</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="auto" height="auto"
+                        src="https://www.youtube.com/embed/HhwaDxAOv3w?si=LT0vCzqErMR6nPjK" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmación de Suscripción -->
+<div class="modal fade" id="Confirmacion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    style="background-color: rgba(0, 0, 0, 0.7);">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Suscripción</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>¡Se ha confirmado tu suscripción a nuestro Newsletter!</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmación Vaciar -->
+<div class="modal fade" id="Vaciar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    style="background-color: rgba(0, 0, 0, 0.7);">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmación...</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>¿Estás segurdo de vaciar el carrito?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'VerCarrito' %}#carrito"><button type="button" class="btn btn-outline-success btn-lg m-2" data-bs-dismiss="modal">Cerrar</button></a>
+                <a href="{% url 'VaciarCarrito' %}"><button type="button" class="btn btn-outline-danger btn-lg m-2" data-bs-dismiss="modal">Vaciar</button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Confirmación de Pedido -->
+<div class="modal fade" id="Pedir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+    style="background-color: rgba(0, 0, 0, 0.7);">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmación...</h1>
+                <a href="{% url 'VerCarrito' %}#carrito"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+            </div>
+            <div class="modal-body">
+                <p class="fw-bold"> Estimad@ {{user.first_name}}:</p>
+                <p>¡Muchas Gracias! Su pedido ha sido confiramdo con éxito.</p>
+                <p>Estaremos en contacto.</p>    
+            </div>
+            <div class="modal-footer">
+                <a href="{% url 'RealizarPedido' %}"><button type="button" class="btn btn-outline-success btn-lg m-2" data-bs-dismiss="modal">Aceptar</button></a>
+            </div>
+        </div>
+    </div>
+</div>

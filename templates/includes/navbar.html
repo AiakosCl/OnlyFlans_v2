@@ -1,0 +1,89 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'Inicio' %}"><img src="{% static 'img/OnlyFlans.png' %}" width='150px'
+                alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-0 me-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'Inicio' %}">Inicio</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'Bienvenida' %}#Menu">Ofertas para ti</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'AcercaDe' %}#AcercaDe">Acerca de</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'contacto' %}#Contacto">Contáctanos</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{% url 'HistorialPedidos' %}">Mis Pedidos</a>
+                </li>
+                {% if user.is_superuser or user.is_staff %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Administración
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" aria-current="page"
+                                href="{% url 'NuevoProducto' %}#productos">Nuevo
+                                Producto</a></li>
+                        <li><a class="dropdown-item" aria-current="page"
+                                href="{% url 'ListaProducto' %}#productos">Listar
+                                Productos</a></li>
+                        <li><a class="dropdown-item" href="{% url 'Importar' %}#productos">Carga Masiva</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" aria-current="page"
+                                href="{% url 'NuevoUsuario' %}#usuarios">Crear Nuevo Usuario</a></li>
+                        <li><a class="dropdown-item" href="{% url 'ListaUsuarios' %}#usuarios">Listar Usuarios</a></li>
+                    </ul>
+                </li>
+                {% endif %}
+                {% endif %}
+            </ul>
+            <form class="d-flex ms-auto me-0" role="search" action="{% url 'filtro' %}#Menu" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
+        <ul class="navbar-nav ms-auto">
+            {% if user.is_authenticated %}
+            <li class="nav-item">
+                <table>
+                    <tr>
+                        <td>
+                            {% if user.is_staff or user.is_superuser %}
+                            <img src="{% static 'img/staff.png' %}" class="rounded float-start" height=50px>
+                            {% else %}
+                            <img src="{% static 'img/Ratatouille_2.png' %}" class="rounded float-start" height=50px>
+                            {% endif %}
+                            
+                        </td>
+                        <td>
+                            <a class="nav-link" href="{% url 'logout' %}">Cerrar sesión</a>
+                        </td>
+                        <td>
+                            <a href="{% url 'VerCarrito' %}#carrito"><i class="fa-brands fa-shopify fs-1 {% if request.user.carrito_set.exists %} text-danger {% endif %}"></i></a>
+                        </td>
+                    </tr>
+                </table>
+            </li>
+            {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'login' %}">Iniciar sesión</a>
+            </li>
+            {% endif %}
+        </ul>
+
+    </div>
+</nav>

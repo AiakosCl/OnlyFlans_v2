@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block modals %}
+<!-- Modal -->
+    <div class="modal fade" id="nuevoProductoModal" tabindex="-1" aria-labelledby="nuevoProductoModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
+        <div class="modal-dialog modal-md" >
+            <div class="modal-content">
+                <div class="modal-header" style="width: 100%;">
+                    <h1 class="modal-title">Carga masiva</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <h5>{% include "includes/mensajes.html" %}</h5>
+                <div class="modal-body m-0">
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="id_archivo" class="form-label">Formato masivo Excel:</label>
+                            <input type="file" class="form-control" id="id_archivo" name="archivo_excel" placeholder="Seleccione el archivo" required>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="{% url 'ListaProducto' %}#productos">
+                                <button type="button" class="btn btn-outline-danger btn-lg m-2" data-bs-dismiss="modal">Cerrar</button>
+                            </a>
+                            <a href="{% url 'ListaProducto' %}#productos">
+                                <button type="submit" class="btn btn-outline-success btn-lg m-2" data-bs-dismiss="modal">Cargar</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Script para activar Modal cuando se cargue la página -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var nuevoProductoModal = new bootstrap.Modal(document.getElementById('nuevoProductoModal'));
+        nuevoProductoModal.show();
+    });
+</script>
+
+{% endblock %}
+

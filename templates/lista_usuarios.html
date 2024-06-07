@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contenido %}
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top mt-2">
+    <div class="container-fluid">
+        <a href="{% url 'ListaUsuarios' %}#usuarios" class="text-decoration-none text-dark"><h2>Lista de Usuarios</h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent3"
+            aria-controls="navbarSupportedContent3" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent3">
+            <form class="d-flex ms-auto me-0" role="search" action="{% url 'FiltroUsuarios' %}#usuarios" method="GET">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" name="q">
+                <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+    </div>
+</nav>
+<section id="usuarios">
+    <div class="border border-info-subtle rounded-3" style="max-width: 1280px;">
+        <div id="table-responsive" style="max-width:100%;max-height: 700px;overflow-y: auto;">
+            <table class="table table-sm align-middle" style="max-width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre de usuario</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Staff</th>
+                        <th>Activo</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% csrf_token %}
+                    {% for usuario in lista %}
+                    <tr>
+                        <td>
+                            {% if usuario.is_staff %}
+                            <img src="{% static 'img/staff.png' %}" class="rounded float-start" height=50px>
+                            {% else %}
+                            <img src="{% static 'img/Ratatouille_2.png' %}" class="rounded float-start" height=50px>
+                            {% endif %}
+                        </td>
+                        <td>{{ usuario.username }}</td>
+                        <td>{{ usuario.first_name }}</td>
+                        <td>{{ usuario.last_name }}</td>
+                        <td>
+                            {% if usuario.is_staff %}
+                            <p class="fs-3 text-center"><i class="fa-regular fa-circle-check"></i></p>
+                            {% else %}
+                            <p class="fs-3 text-center"><i class="fa-regular fa-circle-xmark"></i></p>
+                            {% endif %}
+                        </td>
+                        <td>
+                            {% if usuario.is_active %}
+                            <p class="fs-3 text-center"><i class="fa-regular fa-circle-check"></i></p>
+                            {% else %}
+                            <p class="fs-3 text-center"><i class="fa-regular fa-circle-xmark"></i></p>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <a href="{% url 'EditarUsuario' usuario.id %}#listas"><i class="fa-solid fa-pen-to-square fs-3"></i></a>
+                            <a href="{% url 'EliminarUsuario' usuario.id %}#listas"><i class="fa-solid fa-trash-can fs-3"></i></a>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <h2 class="text-center" style="width: 100%;"><i class="fa-regular fa-face-frown-open"></i> Ups! No encuentro lo que buscas</h2>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <a href="{% url 'NuevoUsuario' %}"><button type="button" class="btn btn-outline-dark btn-lg m-2">Nuevo Usuario</button></a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+
+{% block contenido %}
+<section id="productos">
+    <!-- <div class="container text-center">
+        <button type="button" class="btn btn-outline-dark btn-lg m-2" data-bs-toggle="modal" data-bs-target="#nuevoProductoModal"></button>
+    </div> -->
+</section>
+
+<!-- Modal -->
+    <div class="modal fade" id="nuevoProductoModal" tabindex="-1" aria-labelledby="nuevoProductoModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Editar Producto</h1>
+                    <a href="{% url 'ListaProducto' %}#productos"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+                </div>
+                <!-- barra de mensajes -->
+                {% include "includes/mensajes.html" %}
+                <!-- barra de mensajes -->
+                <div class="modal-body">
+                    <!-- Formulario para ingresar nuevo producto con Clases Bootstrap -->
+                    <form method="post" enctype="multipart/form-data" width="100%" class="row g-3 mx-3">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="id_NombreProducto" class="form-label">Nombre del Producto:</label>
+                            <input type="text" class="form-control" id="id_NombreProducto" name="nombre" value="{{formulario.nombre}}">
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_DescProducto" class="form-label">Descripción del producto:</label>
+                            <textarea type="text" class="form-control" id="id_DescProducto" name="descripcion" rows="3">{{formulario.descripcion}}</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_PrecioProducto" class="form-label">Precio del producto:</label>
+                            <input type="text" class="form-control" id="id_PrecioProducto" name="precio" value="{{formulario.precio}}">
+                        </div>                        
+                        <div class="mb-3">
+                            <table style="width: 100%;">
+                                <tr>
+                                    <td>
+                                        <img src="{{ formulario.imagen.url }}" class="img-card-top float-start" height="200px" alt="">
+                                    </td>
+                                    <td>
+                                        <label for="id_ImagenProducto" class="form-label">Imagen del producto:</label>
+                                        <input type="file" class="form-control" id="id_ImagenProducto" name="imagen">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_Liviano" class="form-label">Preparación:</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="liviano" id="liviano_si" value = "True" {% if formulario.liviano.value %}checked{% endif %}>
+                                <label class="form-check-label" for="liviano_si"><i class="fa-solid fa-l"></i> - Light</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="liviano" id="liviano_no" value = "False" {% if not formulario.liviano.value %}checked{% endif %}>
+                                <label class="form-check-label" for="liviano_no"><i class="fa-solid fa-t"></i> - Tradicional</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_Privado" class="form-label">Privacidad:</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="privado" id="privado_si" value = "True" {% if formulario.privado.value %}checked{% endif %}>
+                                <label class="form-check-label" for="privado_si">Privado</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" name="privado" id="privado_no" value = "False" {% if not formulario.privado.value %}checked{% endif %}>
+                                <label class="form-check-label" for="privado_no">Público</label>
+                            </div>
+                        </div>
+                        <!-- Cómo utilizar los botones de radio para seleccionar un booleando -->
+                        <div class="modal-footer">
+                            <a href="{% url 'ListaProducto' %}#productos"><button type="button" class="btn btn-outline-danger btn-lg m-2" data-bs-dismiss="modal">Cerrar</button></a>
+                            <button type="submit" class="btn btn-outline-success btn-lg m-2">Guardar</button>
+                        </div>
+                    </form>
+                    <!-- Formulario para ingresar nuevo producto con Clases Bootstrap -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Script para activar Modal cuando se cargue la página -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var nuevoProductoModal = new bootstrap.Modal(document.getElementById('nuevoProductoModal'));
+        nuevoProductoModal.show();
+    });
+</script>
+{% endblock %}

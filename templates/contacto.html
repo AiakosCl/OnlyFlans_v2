@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+
+
+{% block contenido %}
+<section id="Contacto">
+    <!-- <div class="container text-center">
+        <button type="button" class="btn btn-outline-dark btn-lg m-2" data-bs-toggle="modal" data-bs-target="#nuevoProductoModal">Contacto</button>
+    </div> -->
+</section>
+
+
+<!-- Modal -->
+    <div class="modal fade" id="nuevoProductoModal" tabindex="-1" aria-labelledby="nuevoProductoModalLabel" aria-hidden="true" style="background-color: rgba(0,0,0,0.7);">
+        <div class="modal-dialog modal-lg" >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Contáctanos</h1>
+                    <a href="{% url 'Inicio' %}"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+                </div>
+                <div class="modal-body">
+                    <!-- formulario de contacto -->
+                    <div class="container text-center py-2" style="width: 100%;">
+                        <h3 class="fw-bold">Coméntanos</h3>
+                        <div class="d-none d-md-block">Para nosotros será un gusto saber de ti, y cómo podemos ayudarte.  Escríbenos, que responderemos a la brevedad posible.</div>
+                    </div>
+                    <!-- barra de mensajes -->
+                    {% include "includes/mensajes.html" %}
+                    <!-- barra de mensajes -->
+                    <form method="post" width="100%" class="row g-3 mx-3">
+                        {% csrf_token %}
+                        <!-- {{contacto.non_fields_errors}} -->
+                        <!-- Aquí cuando colocas el nombre del campo de tu modelo en "name=" de tu tag input, los relacionas -->
+                        <div class="mb-3">
+                            <label for="id_NombreCliente" class="form-label">{{contacto.NombreCliente.label}}</label>
+                            <input type="text" class="form-control" id="id_NombreCliente" name="NombreCliente" placeholder="Su nombre">
+                        </div>
+                        <div class="text-danger">
+                            {{contacto.NombreCliente.errors}}
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_EmailCliente" class="form-label">{{contacto.EmailCliente.label}}</label>
+                            <input type="email" class="form-control" id="id_EmailCliente" name="EmailCliente" placeholder="correo@electronico.com">
+                        </div>
+                        <div class="text-danger">
+                            {{contacto.EmailCliente.errors}}
+                        </div>
+                        <div class="mb-3">
+                            <label for="id_Mensaje" class="form-label">{{contacto.Mensaje.label}}</label>
+                            <textarea class="form-control" id="id_Mensaje" name="Mensaje" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
+                        </div>
+                        <div class="text-danger">
+                            {{contacto.Mensaje.errors}}
+                        </div>
+                        <div class="my-3 text-end">
+                            <button type="submit" class="btn btn-outline-dark btn-lg m-2">Enviar</button>
+                        </div>
+                    </form>
+                    <!-- formulario de contacot -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Script para activar Modal cuando se cargue la página -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var nuevoProductoModal = new bootstrap.Modal(document.getElementById('nuevoProductoModal'));
+        nuevoProductoModal.show();
+    });
+</script>
+{% endblock %}
